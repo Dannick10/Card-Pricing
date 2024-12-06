@@ -1,0 +1,93 @@
+.card {
+  max-width: 354px;
+  min-width: 270px;
+  height: 516px;
+  padding: 31px 15px;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--colorGradientCard);
+  border: 3px solid #c01c1c;
+  border-radius: 25px;
+  color: var(--colorTypography);
+}
+
+.card-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  & .price h3 {
+    font-size: 54px;
+    font-weight: 500;
+
+    & span {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}
+
+.badge {
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: var(--colorBadge);
+  padding: 2px 30px;
+  font-weight: bold;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--colorTypography);
+}
+
+.card-body {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  & .subtitle-info {
+    font-weight: lighter;
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 10px;
+    color: #fff;
+    gap: 16px;
+
+    & li {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+.btn {
+  font-size: 20px;
+  background: var(--colorGradientButton);
+  color: #fff;
+  font-weight: 100;
+  padding: 10px 5px;
+}
+
+.btn:hover {
+  filter: brightness(130%);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
